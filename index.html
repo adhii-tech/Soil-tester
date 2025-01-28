@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Quality Measuring</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Soil Quality Project</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h2>Welcome to Our Soil Quality Project</h2>
+                <p>Learn about the importance of soil quality and how to measure it.</p>
+                <button>Start Measuring Now</button>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>We offer a variety of soil testing services to ensure your soil is healthy and productive.</p>
+                <div class="services-list">
+                    <div class="service">
+                        <h3>pH Testing</h3>
+                        <p>Measure the acidity or alkalinity of your soil.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Nutrient Analysis</h3>
+                        <p>Determine the nutrient levels in your soil.</p>
+                    </div>
+                    <!-- Add more services as needed -->
+                </div>
+            </div>
+        </section>
+<section id="test-form">
+    <div class="container">
+        <h2>Soil Quality Test Form</h2>
+        <form id="soil-form">
+            <div class="form-group">
+                <label for="soil-name">Soil name:</label>
+                <input type="text" id="soil-name" name="soil-name" required>
+            </div>
+            <div class="form-group">
+                <label for="soil-type">Soil type:</label>
+                <input type="text" id="soil-type" name="soil-type" required>
+            </div>
+            <div class="form-group">
+                <label for="atmospheric-pressure">Atmospheric Pressure:</label>
+                <input type="text" id="atmospheric-pressure" name="atmospheric-pressure" required>
+            </div>
+            <div class="form-group">
+                <label for="moisture-content">Moisture Content:</label>
+                <input type="text" id="moisture-content" name="moisture-content" required>
+            </div>
+            <div class="form-group">
+                <h3>Elements in the tested soil</h3>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="nitrogen" name="nitrogen">
+                    <label for="nitrogen">Nitrogen</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="phosphorus" name="phosphorus">
+                    <label for="phosphorus">Phosphorus</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="potassium" name="potassium">
+                    <label for="potassium">Potassium</label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="results">
+            <div class="container">
+                <h2>Results</h2>
+                <canvas id="soilChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Contact Information: info@soilqualityproject.com</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <p>&copy; 2024 Soil Quality Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
